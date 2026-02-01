@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Header with SourceShan colors -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=4A45EA&center=true&vCenter=true&width=550&lines=🛡️+SourceShan+Case+Study;Edge-First+Security+Architecture;Next.js+16+%7C+MongoDB+%7C+GitHub+API" alt="SourceShan"/>
+![SourceShan](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=4A45EA&center=true&vCenter=true&width=550&lines=%F0%9F%9B%A1%EF%B8%8F+SourceShan+Case+Study;Edge-First+Security+Architecture;Next.js+16+%7C+MongoDB+%7C+GitHub+API)
 
 <br/>
 
