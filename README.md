@@ -16,8 +16,10 @@
   <a href="#-documentation">
     <img src="https://img.shields.io/badge/📚_Docs-Explore-4a45ea?style=for-the-badge"/>
   </a>
-  <a href="#-quick-stats">
-    <img src="https://img.shields.io/badge/📊_Stats-View-33325c?style=for-the-badge"/>
+  <a href="https://img.shields.io/badge/📊_Stats-View-33325c?style=for-the-badge"/>
+  </a>
+  <a href="README.ar.md">
+    <img src="https://img.shields.io/badge/لغة-العربية-5042a5?style=for-the-badge"/>
   </a>
 </p>
 
