@@ -452,8 +452,6 @@ interface PendingMediaState {
 
 <div align="center">
 
-[![Prev](https://img.shields.io/badge/%E2%86%90_%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%84-5042a5?style=for-the-badge)](03-solution-architecture.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9-4a45ea?style=for-the-badge)](05-technical-decisions.md)
-
-</div>
+[![Prev: Solution Architecture](https://img.shields.io/badge/←_Prev:_Solution_Architecture-5042a5?style=for-the-badge)](03-solution-architecture.md) [![Next: Technical Decisions](https://img.shields.io/badge/Next:_Technical_Decisions_→-4a45ea?style=for-the-badge)](05-technical-decisions.md)
 
 </div>

@@ -386,8 +386,6 @@
 
 <div align="center">
 
-[![Prev](https://img.shields.io/badge/%E2%86%90_%D8%A7%D9%84%D9%86%D8%B4%D8%B1-5042a5?style=for-the-badge)](09-deployment.md) [![Next](https://img.shields.io/badge/%D9%81%D9%87%D8%B1%D8%B3_%D8%A7%D9%84%D9%88%D8%AB%D8%A7%D8%A6%D9%82-4a45ea?style=for-the-badge)](../../README.ar.md)
-
-</div>
+[![Prev: Deployment](https://img.shields.io/badge/←_Prev:_Deployment-5042a5?style=for-the-badge)](09-deployment.md) [![Index](https://img.shields.io/badge/Back_to_Index-4a45ea?style=for-the-badge)](../../README.ar.md)
 
 </div>

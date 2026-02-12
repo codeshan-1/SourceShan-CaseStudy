@@ -11,13 +11,13 @@
 
 <p>
   <a href="https://sourceshan.vercel.app">
-    <img src="https://img.shields.io/badge/%F0%9F%8C%90_%D8%B9%D8%B1%D8%B6_%D8%AD%D9%8A-Sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Live_Demo-5042a5?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
   <a href="#-التوثيق">
-    <img src="https://img.shields.io/badge/%F0%9F%93%9A_%D8%A7%D9%84%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%A7%D8%B3%D8%AA%D9%83%D8%B4%D9%81-4a45ea?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Read_Docs-4a45ea?style=for-the-badge&logo=readthedocs&logoColor=white"/>
   </a>
   <a href="README.md">
-    <img src="https://img.shields.io/badge/Language-English-33325c?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Read_in_English-33325c?style=for-the-badge"/>
   </a>
 </p>
 
@@ -496,7 +496,7 @@
 ## 🌐 استكشف المنصة الحية
 
 <a href="https://sourceshan.vercel.app">
-  <img src="https://img.shields.io/badge/%F0%9F%9A%80_%D8%A5%D8%B7%D9%84%D8%A7%D9%82_%D8%A7%D9%84%D8%B9%D8%B1%D8%B6-Sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Live_Demo-5042a5?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
 
 <br/><br/>

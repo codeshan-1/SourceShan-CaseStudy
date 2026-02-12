@@ -383,8 +383,6 @@ LAYER 5: HttpOnly Cookies
 
 <div align="center">
 
-[![Prev](https://img.shields.io/badge/%E2%86%90_%D8%A8%D9%8A%D8%A7%D9%86_%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9-5042a5?style=for-the-badge)](02-problem-statement.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A7%D9%84%D9%85%D9%8A%D8%B2%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9-4a45ea?style=for-the-badge)](04-key-features.md)
-
-</div>
+[![Prev: Problem Statement](https://img.shields.io/badge/←_Prev:_Problem_Statement-5042a5?style=for-the-badge)](02-problem-statement.md) [![Next: Key Features](https://img.shields.io/badge/Next:_Key_Features_→-4a45ea?style=for-the-badge)](04-key-features.md)
 
 </div>
