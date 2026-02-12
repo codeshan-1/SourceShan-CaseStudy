@@ -359,6 +359,10 @@
 <img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
 </div>
 
-*[← العودة للنظرة العامة](01-overview.md) | [تابع إلى معمارية الحل →](03-solution-architecture.md)*
+<div align="center">
+
+[![Prev](https://img.shields.io/badge/%E2%86%90_%D9%86%D8%B8%D8%B1%D8%A9_%D8%B9%D8%A7%D9%85%D8%A9-5042a5?style=for-the-badge)](01-overview.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%84-4a45ea?style=for-the-badge)](03-solution-architecture.md)
+
+</div>
 
 </div>

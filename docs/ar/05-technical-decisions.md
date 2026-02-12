@@ -421,6 +421,10 @@
 <img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
 </div>
 
-*[← العودة للميزات الأساسية](04-key-features.md) | [تابع للتحديات والحلول →](06-challenges-solutions.md)*
+<div align="center">
+
+[![Prev](https://img.shields.io/badge/%E2%86%90_%D8%A7%D9%84%D9%85%D9%8A%D8%B2%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9-5042a5?style=for-the-badge)](04-key-features.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%AD%D9%84%D9%88%D9%84-4a45ea?style=for-the-badge)](06-challenges-solutions.md)
+
+</div>
 
 </div>

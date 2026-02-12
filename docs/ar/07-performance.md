@@ -447,6 +447,10 @@ import { LazyMotion, domAnimation, m } from 'framer-motion';
 <img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
 </div>
 
-*[← العودة للتحديات والحلول](06-challenges-solutions.md) | [تابع للاختبار والجودة →](08-testing-quality.md)*
+<div align="center">
+
+[![Prev](https://img.shields.io/badge/%E2%86%90_%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%AD%D9%84%D9%88%D9%84-5042a5?style=for-the-badge)](06-challenges-solutions.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1_%D9%88%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-4a45ea?style=for-the-badge)](08-testing-quality.md)
+
+</div>
 
 </div>

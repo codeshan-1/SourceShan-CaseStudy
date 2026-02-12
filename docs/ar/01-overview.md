@@ -242,6 +242,10 @@
 <img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
 </div>
 
-*[تابع إلى بيان المشكلة ←](02-problem-statement.md)*
+<div align="center">
+
+[![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A8%D9%8A%D8%A7%D9%86_%D8%A7%D9%84%D9%85%D8%B4%D9%83%D9%84%D8%A9-4a45ea?style=for-the-badge)](02-problem-statement.md)
+
+</div>
 
 </div>

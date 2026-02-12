@@ -320,6 +320,10 @@ export default nextConfig;
 <img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
 </div>
 
-*[← العودة للاختبار والجودة](08-testing-quality.md) | [تابع للنتائج والأثر →](10-results-impact.md)*
+<div align="center">
+
+[![Prev](https://img.shields.io/badge/%E2%86%90_%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1_%D9%88%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-5042a5?style=for-the-badge)](08-testing-quality.md) [![Next](https://img.shields.io/badge/Next_%E2%86%92_%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC_%D9%88%D8%A7%D9%84%D8%A3%D8%AB%D8%B1-4a45ea?style=for-the-badge)](10-results-impact.md)
+
+</div>
 
 </div>

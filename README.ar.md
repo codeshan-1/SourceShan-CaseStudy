@@ -11,10 +11,10 @@
 
 <p>
   <a href="https://sourceshan.vercel.app">
-    <img src="https://img.shields.io/badge/🌐_عرض_حي-sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/%F0%9F%8C%90_%D8%B9%D8%B1%D8%B6_%D8%AD%D9%8A-Sourceshan.vercel.app-5042a5?style=for-the-badge"/>
   </a>
   <a href="#-التوثيق">
-    <img src="https://img.shields.io/badge/📚_الوثائق-استكشف-4a45ea?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/%F0%9F%93%9A_%D8%A7%D9%84%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%A7%D8%B3%D8%AA%D9%83%D8%B4%D9%81-4a45ea?style=for-the-badge"/>
   </a>
   <a href="README.md">
     <img src="https://img.shields.io/badge/Language-English-33325c?style=for-the-badge"/>
@@ -139,7 +139,7 @@
 أشعل هذا السؤال فكرة لمنصة كاملة—لوحة تحكم تتيح لكل عميل إدارة محفظته بشكل مستقل.
 
 ### ⚡ التحدي
-بناء نظام متعدد العملاء (multi-tenant) مع **عزل كامل للبيانات** مع الحفاظ على تجربة مستخدم سلسة:
+بناء نظام متعدد العملاء (multi-client) مع **عزل كامل للبيانات** مع الحفاظ على تجربة مستخدم سلسة:
 
 | التحدي | الوصف |
 |:---------:|-------------|
@@ -496,7 +496,7 @@
 ## 🌐 استكشف المنصة الحية
 
 <a href="https://sourceshan.vercel.app">
-  <img src="https://img.shields.io/badge/🚀_إطلاق_العرض-sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/%F0%9F%9A%80_%D8%A5%D8%B7%D9%84%D8%A7%D9%82_%D8%A7%D9%84%D8%B9%D8%B1%D8%B6-Sourceshan.vercel.app-5042a5?style=for-the-badge"/>
 </a>
 
 <br/><br/>
