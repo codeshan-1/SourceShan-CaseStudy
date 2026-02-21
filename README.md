@@ -1,70 +1,210 @@
-# 🛡️ SourceShan — Edge-First Multi-Tenant Portfolio Management
+<div align="center">
 
-> **Protecting at the Edge before the server even wakes up.**
+<!-- Header with SourceShan colors -->
+![SourceShan](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=4A45EA&center=true&vCenter=true&width=550&lines=%F0%9F%9B%A1%EF%B8%8F+SourceShan+Case+Study;Edge-First+Security+Architecture;Next.js+16+%7C+MongoDB+%7C+GitHub+API)
 
-![SourceShan Hero Banner](screenshots/banner.webp)
-*SourceShan's admin interface — a multi-tenant portfolio control panel with edge-first security.*
+<br/>
 
----
+### 🔐 Multi-Tenant Portfolio Management System
 
-## 📖 Project Overview
+> **Protecting at the Edge before the server even wakes up**
 
-**SourceShan** is a multi-tenant portfolio management system that enables multiple clients to independently manage their own portfolio websites through a unified control panel. Born from the real pain of manually editing client portfolios for every small change, SourceShan transforms a freelancer's workflow from "client requests → developer edits code → manual deploy" into "client logs in → edits content → changes are live."
+<p>
+  <a href="https://sourceshan.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+  </a>
+  <a href="#-documentation">
+    <img src="https://img.shields.io/badge/📚_Docs-Explore-4a45ea?style=for-the-badge"/>
+  </a>
+  <a href="https://img.shields.io/badge/📊_Stats-View-33325c?style=for-the-badge"/>
+  </a>
+  <a href="README.ar.md">
+    <img src="https://img.shields.io/badge/لغة-العربية-5042a5?style=for-the-badge"/>
+  </a>
+</p>
 
-The platform's defining engineering achievement is its **Edge Fortress Authentication** — JWT verification happens at Vercel's CDN layer using the JOSE library, meaning invalid tokens are rejected before the Node.js runtime even wakes up. This results in zero compute cost for unauthorized requests and dramatically reduces the attack surface. The system uses a dual-token architecture (15-minute access + 7-day refresh) with silent rotation, ensuring users never experience session interruptions.
+<br/>
 
-SourceShan also features a **Schema-Driven Form Engine** that generates dynamic editing forms from JSON schemas. When a new field is added to the portfolio schema, the UI updates automatically — zero additional code required. Portfolio updates are committed atomically to GitHub repositories using the Git Trees API, ensuring data integrity across multiple file operations in a single commit.
+![SourceShan Banner](screenshots/banner.webp)
 
----
+<br/>
 
-## ❓ Problem Statement
+[![Tech Stack](https://img.shields.io/badge/Stack-Next.js%2016%20%7C%20React%2019%20%7C%20MongoDB-5042a5?style=flat-square)]()
+[![Security](https://img.shields.io/badge/Security-Edge%20Auth%20%7C%20Dual%20Token-4a45ea?style=flat-square)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Production-33325c?style=flat-square)]()
 
-As a freelance developer building portfolios for clients, a recurring workflow emerged:
+</div>
 
-> *"Do I have to come back to you every time I want to add a project?"*
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
 
-Every edit — adding a project, swapping an image, changing a bio — required the developer to manually edit code and redeploy. This created four critical challenges:
+<br/>
 
-**1. Security at Scale**
-Multiple clients sharing one platform means a single vulnerability could compromise everyone's data. Complete data isolation is non-negotiable.
+## 📊 Quick Stats
 
-**2. Serverless Connection Exhaustion**
-Vercel's Lambda architecture creates a new database connection per request. Under load, this quickly exhausts MongoDB's connection pool limits, causing cascading failures.
+<div align="center">
 
-**3. Atomic Multi-File Operations**
-A portfolio update often involves multiple files simultaneously (JSON data + images). GitHub's Contents API creates N commits for N files — not atomic. A partial failure leaves the portfolio in a broken state.
+<table>
+  <tr>
+    <td align="center">
+      <h3>🛡️</h3>
+      <b>Security Layers</b><br/>
+      <sub>5 Levels</sub>
+    </td>
+    <td align="center">
+      <h3>👨‍💻</h3>
+      <b>Role</b><br/>
+      <sub>Solo Full-Stack</sub>
+    </td>
+    <td align="center">
+      <h3>💻</h3>
+      <b>Lines of Code</b><br/>
+      <sub>~6,500 TypeScript</sub>
+    </td>
+    <td align="center">
+      <h3>🧩</h3>
+      <b>Components</b><br/>
+      <sub>53 Files</sub>
+    </td>
+    <td align="center">
+      <h3>⚡</h3>
+      <b>Token TTL</b><br/>
+      <sub>15 min Access</sub>
+    </td>
+  </tr>
+</table>
 
-**4. Edge Runtime Constraints**
-The industry-standard `jsonwebtoken` library doesn't work in Vercel's Edge Runtime. Security verification — the most frequent operation — needs to run at the edge for performance, but the tooling wasn't designed for it.
+</div>
 
----
+<br/>
 
-## 🚀 Solution & Approach
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
 
-SourceShan is built around a **5-Layer Security Architecture** that protects data at every level from the CDN edge to the database.
+<br/>
 
-### Architecture Overview
+## 🛠️ Technology Stack
+
+<div align="center">
+
+**🌟 Frontend**
+<p>
+<img src="https://img.shields.io/badge/Next.js_16-060615?style=for-the-badge&logo=next.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/React_19-5042a5?style=for-the-badge&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tailwind_v4-4a45ea?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+</p>
+
+**🔐 Security & Auth**
+<p>
+<img src="https://img.shields.io/badge/JOSE-Edge_JWT-5042a5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Bcrypt-Hashing-4a45ea?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HttpOnly-Cookies-33325c?style=for-the-badge"/>
+</p>
+
+**💾 Backend & Storage**
+<p>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub_API-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Octokit-5042a5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Sharp-4a45ea?style=for-the-badge"/>
+</p>
+
+**☁️ Infrastructure**
+<p>
+<img src="https://img.shields.io/badge/Vercel-Edge_Functions-060615?style=for-the-badge&logo=vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub_App-Secure_Auth-181717?style=for-the-badge&logo=github"/>
+</p>
+
+</div>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 🎯 The Story
+
+### 🌍 The Context
+
+I was building portfolios for clients manually. Every edit—adding a project, changing an image—had to go through me. Client sends a request, I edit the code, deploy. This wasn't scalable.
+
+SourceShan was born from a simple question: *"Do I have to come back to you every time I want to add a project?"*
+
+That sparked an entire platform—a control panel letting each client manage their portfolio independently.
+
+### ⚡ The Challenge
+
+Building multi-tenant with **complete data isolation** while maintaining seamless UX:
+
+| Challenge | Description |
+|:---------:|-------------|
+| 🔐 **Security at Scale** | Multiple clients, one vulnerability could compromise everyone |
+| ⚡ **Serverless Constraints** | Lambda architecture risks database connection exhaustion |
+| 🔄 **Atomic Operations** | Portfolio updates involve multiple files (JSON + images) |
+| 📐 **Schema Evolution** | New fields shouldn't require code changes |
+
+### 🚀 The Solution
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+#### 🛡️ Edge Fortress
+JWT verification at CDN level using JOSE. Invalid tokens rejected before Node.js wakes up. Zero compute cost for bad requests.
+
+</td>
+<td width="33%" valign="top">
+
+#### 🔄 Dual-Token System
+15-minute access + 7-day refresh tokens. Silent rotation maintains sessions. Users never experience interruptions.
+
+</td>
+<td width="33%" valign="top">
+
+#### 📐 Schema-Driven UI
+Forms generated dynamically from JSON schemas. New fields appear automatically—zero additional code.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 🏗️ System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                     🛡️ EDGE LAYER (Vercel CDN)                  │
 │  ┌───────────────────────────────────────────────────────────┐  │
 │  │           middleware.ts (JOSE JWT Verification)            │  │
-│  │  • Token validation before Node.js wakes up               │  │
-│  │  • Automatic token refresh during request lifecycle        │  │
-│  │  • RBAC enforcement (admin/client roles)                   │  │
+│  │  • Token validation before Node.js                        │  │
+│  │  • Automatic token refresh                                │  │
+│  │  • RBAC enforcement (admin/client)                        │  │
 │  └───────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    💻 APPLICATION LAYER                          │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐ │
-│  │ API Routes  │  │   React     │  │    Service Layer        │ │
-│  │ /api/auth/* │  │ Components  │  │ • lib/github.ts         │ │
-│  │ /api/admin/*│  │ • MainEditor│  │ • lib/auth.ts           │ │
-│  │ /api/portfolio│ │ • AdminPanel│ │ • lib/mongodb.ts        │ │
-│  └──────┬──────┘  └─────────────┘  └──────────┬──────────────┘ │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐  │
+│  │ API Routes  │  │   React     │  │    Service Layer        │  │
+│  │ /api/auth/* │  │ Components  │  │ • lib/github.ts         │  │
+│  │ /api/admin/*│  │ • MainEditor│  │ • lib/auth.ts           │  │
+│  │ /api/portfolio│ │ • Admin    │  │ • lib/mongodb.ts        │  │
+│  └──────┬──────┘  └─────────────┘  └──────────┬──────────────┘  │
 └─────────┼─────────────────────────────────────┼─────────────────┘
           │                                     │
           ▼                                     ▼
@@ -76,145 +216,318 @@ SourceShan is built around a **5-Layer Security Architecture** that protects dat
 └──────────────────────┘              └──────────────────────┘
 ```
 
-### The 5 Security Layers
+<br/>
 
-| Layer | Technology | Purpose |
-|:-----:|:-----------|:--------|
-| **1. Edge** | JOSE JWT in Vercel Middleware | Reject invalid tokens at CDN — zero server compute |
-| **2. API** | Route-level auth guards | Validate permissions per endpoint |
-| **3. RBAC** | Admin/Client role enforcement | Data isolation between tenants |
-| **4. Bcrypt** | 10-round password hashing | Industry-standard credential storage |
-| **5. HttpOnly** | Secure cookie configuration | XSS and CSRF prevention |
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
 
-### Key Technical Decisions
+<br/>
 
-**Edge JWT with JOSE + jsonwebtoken Hybrid:**
-`jsonwebtoken` doesn't work in Edge Runtime. Solution: use `jose` for Edge verification (hot path — most frequent), `jsonwebtoken` for Node.js signing (cold path — less frequent). Best of both worlds.
+## ✨ Key Features
 
-**GitHub Batch Commit with Git Trees API:**
-Instead of N commits for N files, the `batchCommit()` function reconstructs the entire Git tree and creates a single atomic commit. All changes land together, or none do.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Global Connection Pooling:**
-TypeScript global augmentation caches the MongoDB connection promise across Lambda invocations. Survives cold starts, HMR, and race conditions. No more "Too Many Connections" errors.
+### 🛡️ Edge Fortress Authentication
+JWT verification at Vercel's Edge using JOSE. Invalid tokens rejected at CDN—zero server wake-up.
 
----
+**Technical Highlights:**
+- Custom `middleware.ts` in Edge Runtime
+- JOSE for Edge-compatible JWT
+- Automatic token refresh during request lifecycle
+- RBAC with admin/client roles
 
-## ✨ Features
+**Impact:** Zero-cost rejection of invalid requests
 
-- **🛡️ Edge Fortress Authentication** — JWT verification at Vercel's CDN using JOSE. Invalid tokens rejected before Node.js wakes up — zero compute cost for bad requests.
-- **📐 Schema-Driven Form Engine** — Dynamic forms generated from JSON schemas with 7+ specialized field renderers. New schema fields appear in the UI automatically.
-- **🔄 GitHub Batch Commit System** — Atomic multi-file operations using Git Trees API. Single commit for all changes, full tree reconstruction for deletions.
-- **🔗 Global Connection Pooling** — Serverless-safe MongoDB connections via TypeScript global augmentation. Promise caching prevents race conditions across Lambda invocations.
-- **🔐 Dual-Token Authentication** — 15-minute access + 7-day refresh tokens with silent rotation. Users never experience session interruptions.
-- **👥 Multi-Tenant Data Isolation** — Complete separation between client portfolios with RBAC enforcement at every layer.
-- **🖱️ Drag-and-Drop Reordering** — Framer Motion-powered reordering of portfolio sections and projects.
-- **🌍 Bilingual Support** — Arabic/English content editing with proper RTL layout.
-- **📸 Staged Image Uploads** — PendingMediaContext stages uploads before commit, preventing orphaned assets.
-- **🖼️ Sharp Image Processing** — Server-side image optimization before storage.
-- **📋 Admin Dashboard** — User management, portfolio oversight, and system monitoring for administrators.
+</td>
+<td width="50%" valign="top">
 
----
+### 📐 Schema-Driven Form Engine
+Dynamic forms generated from JSON schemas automatically.
 
-## 🛠️ Technologies Used
+**Technical Highlights:**
+- 7+ specialized field renderers
+- Framer Motion drag-and-drop reordering
+- Bilingual support (Arabic/English) with RTL
+- PendingMediaContext for staged uploads
 
-| Category | Technologies |
-|:---------|:-------------|
-| **Frontend** | Next.js 16 (App Router), React 19, TypeScript (Strict Mode) |
-| **Styling** | Tailwind CSS v4, Framer Motion (Drag & Drop) |
-| **Auth & Security** | JOSE (Edge JWT), jsonwebtoken (Node.js), Bcrypt (10 rounds), HttpOnly Cookies |
-| **Database** | MongoDB Atlas, Global Connection Pooling |
-| **Storage** | GitHub API (Octokit), Git Trees API (Atomic Commits) |
-| **Image Processing** | Sharp (Server-side optimization) |
-| **Deployment** | Vercel (Edge Functions + Serverless) |
-| **Auth Provider** | GitHub App (Installation-based auth) |
+**Impact:** Schema changes = automatic UI updates
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-## 📸 Screenshots / Visuals
+### 🔄 GitHub Batch Commit System
+Atomic multi-file operations using Git Trees API.
 
-![Login Page](screenshots/login.webp)
-*Secure Login — Edge-authenticated entry point with dual-token session management.*
+**Technical Highlights:**
+- Single commit for multiple file operations
+- Full tree reconstruction for deletions
+- Installation ID caching
+- Support for text and binary content
 
-![Admin Dashboard](screenshots/admin-dashboard.webp)
-*Admin Dashboard — Multi-tenant overview with user management and portfolio monitoring.*
+**Impact:** Data integrity guaranteed, cleaner history
 
-![Portfolio Editor](screenshots/editor.webp)
-*Schema-Driven Editor — Dynamic forms generated from JSON schemas with drag-and-drop reordering.*
+</td>
+<td width="50%" valign="top">
 
-![User Management](screenshots/user-management.webp)
-*User Management — RBAC-enforced administration with complete tenant data isolation.*
+### 🔗 Global Connection Pooling
+Serverless-safe database connections.
 
----
+**Technical Highlights:**
+- TypeScript global augmentation
+- Promise caching prevents race conditions
+- Survives Lambda cold starts and HMR
+- Automatic reconnection on failure
 
-## 🧪 How to Use / Demo
+**Impact:** No "Too Many Connections" errors
 
-### Live Demo
-👉 Visit **[sourceshan.vercel.app](https://sourceshan.vercel.app)** to view the platform in action.
+</td>
+</tr>
+</table>
 
-### Admin Workflow
-1. **Login** — Authenticate with admin credentials. JWT tokens are verified at the Edge before reaching the server.
-2. **Manage Users** — Create client accounts, assign roles (admin/client), and configure portfolio access.
-3. **Edit Portfolio** — Select a client's portfolio. The schema-driven form engine renders the appropriate editing interface.
-4. **Modify Content** — Edit text fields, upload images, reorder sections via drag-and-drop. All changes are staged locally.
-5. **Commit Changes** — Click "Save" to atomically commit all modifications to the client's GitHub repository in a single commit.
+<br/>
 
-### Client Workflow
-1. **Login** — Client authenticates and sees only their own portfolio data (tenant isolation).
-2. **Edit Content** — Update bio, add projects, change images using the dynamic form interface.
-3. **Publish** — Changes commit atomically to GitHub, triggering automatic deployment of the portfolio site.
+### 🔐 Dual-Token Authentication
 
----
+| Token | Duration | Storage | Protection |
+|:-----:|:--------:|:-------:|:----------:|
+| 🔑 **Access Token** | 15 minutes | HttpOnly cookie | XSS prevention |
+| 🔄 **Refresh Token** | 7 days | HttpOnly cookie | CSRF prevention |
 
-## 📊 Impact / Results
+- Silent rotation maintains session without interruption
+- Edge middleware handles refresh transparently
 
-### Technical Achievements
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 💡 Challenges & Solutions
+
+<table>
+<tr>
+<td align="center" width="25%">🌐</td>
+<td><b>Edge Runtime Limitations</b></td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem:** `jsonwebtoken` doesn't work in Edge Runtime.
+
+**Solution:** Use `jose` for Edge verification, `jsonwebtoken` for Node.js signing. Verification is more frequent, so Edge handles the hot path.
+
+**Result:** Best of both worlds—Edge speed, mature signing library.
+
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">🔄</td>
+<td><b>GitHub API Atomicity</b></td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem:** Contents API creates N commits for N files—not atomic.
+
+**Solution:** Implemented `batchCommit()` using Git Trees API. All changes in one commit, or none.
+
+**Result:** True atomicity, cleaner history, fewer API calls.
+
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">💾</td>
+<td><b>Serverless Database Connections</b></td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem:** Vercel Lambdas create new connections per request, exhausting limits.
+
+**Solution:** Global singleton pattern caching connections across invocations.
+
+**Result:** Stable connections, no exhaustion errors.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 📊 Results & Impact
+
+### ⚡ Technical Achievements
+
+<div align="center">
 
 | Metric | Value |
 |:------:|:-----:|
-| Lines of Code | **~6,500 TypeScript** |
-| Type Coverage | **100% Strict Mode** |
-| Components | **53 Modular Files** |
-| Security Layers | **5 (Edge → API → RBAC → Bcrypt → HttpOnly)** |
-| Token TTL | **15 min Access / 7 day Refresh** |
+| 📝 **Lines of Code** | ~6,500 TypeScript |
+| 🔷 **Type Coverage** | 100% Strict Mode |
+| 🧩 **Components** | 53 modular files |
+| 🛡️ **Security Layers** | 5 (Edge → API → RBAC → Bcrypt → HttpOnly) |
 
-### Security Improvements
-- ✅ **Zero server compute** for invalid tokens — Edge rejection eliminates unnecessary Lambda invocations
-- ✅ **15-minute attack window** — Short-lived access tokens minimize exposure
-- ✅ **HttpOnly cookies** — Complete XSS protection for token storage
-- ✅ **Complete data isolation** — Multi-tenant RBAC prevents cross-client access
-- ✅ **Atomic commits** — Git Trees API prevents data corruption from partial failures
+</div>
 
-### Business Impact
-- **Client independence** — No more manual code edits for content updates. Clients manage their own portfolios.
-- **Scalability** — Multi-tenant architecture supports unlimited clients on a single deployment.
-- **Data integrity** — Atomic batch commits guarantee portfolio consistency across all file operations.
-- **Cost efficiency** — Edge rejection of bad requests means zero compute cost for unauthorized access attempts.
+### ✅ Security Improvements
+
+- ✅ **Zero server compute** for invalid tokens (Edge rejection)
+- ✅ **15-minute attack window** (short-lived access tokens)
+- ✅ **HttpOnly cookies** (XSS protection)
+- ✅ **Complete data isolation** (multi-tenant architecture)
+- ✅ **Bcrypt hashing** (10 rounds, industry standard)
+
+### 📈 Business Impact
+
+- 📈 **Client independence** — No more manual edits for content updates
+- 📈 **Scalability** — Multi-tenant supports unlimited clients
+- 📈 **Data integrity** — Atomic commits prevent corruption
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 📚 Documentation
+
+<div align="center">
+
+| Document | Description |
+|:--------:|:------------|
+| [📋 Overview](docs/01-overview.md) | Project context and vision |
+| [❓ Problem Statement](docs/02-problem-statement.md) | The challenges solved |
+| [🏗️ Solution Architecture](docs/03-solution-architecture.md) | System design deep dive |
+| [✨ Key Features](docs/04-key-features.md) | Feature breakdown |
+| [🔧 Technical Decisions](docs/05-technical-decisions.md) | ADR-style records |
+| [💡 Challenges & Solutions](docs/06-challenges-solutions.md) | Engineering problem-solving |
+| [⚡ Performance](docs/07-performance.md) | Optimization strategies |
+| [🧪 Testing & Quality](docs/08-testing-quality.md) | QA approach |
+| [🚀 Deployment](docs/09-deployment.md) | Infrastructure & CI/CD |
+| [📊 Results & Impact](docs/10-results-impact.md) | Metrics and outcomes |
+
+</div>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## 🖼️ Screenshots
+
+<div align="center">
+
+| 🔐 Login | 🎛️ Admin Dashboard |
+|:--------:|:------------------:|
+| ![Login](screenshots/login.webp) | ![Dashboard](screenshots/admin-dashboard.webp) |
+
+| 📝 Editor | 👥 User Management |
+|:---------:|:------------------:|
+| ![Editor](screenshots/editor.webp) | ![Users](screenshots/user-management.webp) |
+
+</div>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+## ⚠️ Repository Note
+
+<div align="center">
+
+> This is a **case study repository** showcasing technical approach and learnings.  
+> The actual project code is proprietary and not publicly available.
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" valign="top" width="50%">
+
+### ✅ What's Included
+- 📐 Architectural diagrams
+- 📝 Technical decision records
+- ⚡ Code samples (conceptual)
+- 📊 Security analysis
+
+</td>
+<td align="center" valign="top" width="50%">
+
+### ❌ What's NOT Included
+- 🔒 Actual source code
+- 📊 Client data or credentials
+- 🔐 Proprietary business logic
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+<img width="600" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+## 🌐 Explore the Live Platform
+
+<a href="https://sourceshan.vercel.app">
+  <img src="https://img.shields.io/badge/🚀_Launch_Demo-sourceshan.vercel.app-5042a5?style=for-the-badge"/>
+</a>
+
+<br/><br/>
 
 ---
 
-## 🎓 Conclusion / Takeaways
+**Want to discuss this project?**
 
-SourceShan demonstrates that **enterprise-grade security patterns can be implemented in serverless architectures** without compromising developer experience or user flow. The Edge Fortress pattern — verifying JWTs at the CDN before the runtime starts — represents a fundamental shift in how authentication should work in modern web applications.
-
-**Key Insights:**
-- **Edge verification is the future of auth** — Moving JWT verification to the CDN edge eliminates compute cost for invalid requests and reduces latency for valid ones.
-- **JOSE + jsonwebtoken is the right hybrid** — Using the right tool for each runtime (Edge vs. Node.js) delivers the best of both worlds.
-- **Git Trees API enables true atomicity** — GitHub's Contents API is insufficient for multi-file operations. The lower-level Trees API provides the atomic guarantees production systems require.
-- **Schema-driven UIs eliminate boilerplate** — Generating forms from JSON schemas means new fields appear automatically, reducing maintenance burden to zero.
-- **Global connection pooling is essential for serverless** — Without it, every Lambda cold start creates a new connection, quickly exhausting database limits.
-
-SourceShan is a production-grade case study in building **secure, scalable, multi-tenant SaaS** on modern serverless infrastructure.
-
----
-
-## 🔗 References / Links
-
-- 🌐 **Live Demo:** [sourceshan.vercel.app](https://sourceshan.vercel.app)
-- 🌐 **Portfolio:** [codeshan.vercel.app](https://codeshan.vercel.app)
-- 🐙 **GitHub:** [github.com/codeshan-1](https://github.com/codeshan-1)
-- 💼 **LinkedIn:** [linkedin.com/in/codeshan](https://www.linkedin.com/in/codeshan/)
-- 📚 **Full Documentation:** [Case Study Docs](docs/01-overview.md)
+<p>
+<a href="https://codeshan.vercel.app">
+  <img src="https://img.shields.io/badge/Portfolio-codeshan.vercel.app-4a45ea?style=flat-square&logo=vercel"/>
+</a>
+<a href="https://github.com/codeshan-1">
+  <img src="https://img.shields.io/badge/GitHub-codeshan--1-181717?style=flat-square&logo=github"/>
+</a>
+<a href="https://www.linkedin.com/in/codeshan/">
+  <img src="https://img.shields.io/badge/LinkedIn-codeshan-0077B5?style=flat-square&logo=linkedin"/>
+</a>
+</p>
 
 ---
 
-*Built with 💜 by **CodeShan***
+<br/>
+
+Built with 💜 by **CodeShan**
+
+⭐ Star this repo if you found it helpful!
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=5042a5,4a45ea,33325c&height=100&section=footer"/>
+
+</div>
